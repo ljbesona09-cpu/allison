@@ -1,0 +1,74 @@
+body {
+  background-image: url("back.gif");
+  margin: 0%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 30%;
+}
+
+h1 {
+  color: black;
+  text-align: center;
+  font-style: italic;
+  font-size: 6vw;
+
+  height: 200px;
+  margin-top: 0;
+ 
+}
+
+p {
+  font-family: Verdana;
+  font-size: 4vw;
+  text-align: center;
+  align-items: end;
+  padding: 5vw;
+  border-radius: 30px;
+}
+
+.card {
+  text-align: center;
+}
+
+.center-image {
+  width: 80%; 
+  max-width: 300px;
+  height: auto;
+  margin: 10px auto; 
+  display:block;
+}
+
+.style-button {
+  background: linear-gradient(to right, palevioletred, pink);
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  font-size: 20px;
+  font-family: Verdana, sans-serif;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.style-button:hover {
+  background: linear-gradient(to right, hotpink, deeppink);
+  transform: scale(1.05);
+}
+#myImage {
+    display: none;
+    width: 300px;  
+  }
+  
+#againButton { 
+  display: none;
+ }
+.cardshow{
+  display:block;
+}
+  
+  
+ 
+
+
+
+

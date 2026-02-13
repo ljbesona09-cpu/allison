@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Baby</title>
+<link rel="stylesheet" href="body.css">
+</head>
+<body>
+<div class="card">
+  <h1>❤️HAPPY VALENTINES❤️</h1>
+  
+  <button class="style-button" onclick="showImage()">Click Me!</button>
+  
+  <img id="myImage" src="seal.gif" alt="Valentine Picture" class="center-image" width="100px" height="100px">
+  
+  <button id="againButton"class="style-button" onclick="window.location.href='second.html'">Click Again</button>
+
+  <audio autoplay loop>
+  <source src="Taylor Swift - Paper Rings (Official Audio).mp3  " type="audio/mpeg">
+</audio>
+
+
+
+
+
+
+  <script>
+    function showImage() {
+      let img = document.getElementById("myImage");
+      let again = document.getElementById("againButton");
+            
+  if (img.style.display === "none") {
+    img.style.display = "block";
+    again.style.display = "inline-block"; 
+
+  }  
+  
+  else {
+    img.style.display = "none";
+    again.style.display = "none"; 
+
+  }
+
+    }
+
+    
+    
+  </script>
+
+  <p>I don’t need a special day to love you, but today I’ll say it louder.
+  Thank you for choosing me, for loving me, and for being you. Happy Valentine’s Day ❤️</p>
+</div>
+</body>
+</html>

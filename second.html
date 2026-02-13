@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>My Message</title>
+  <style>
+    body {
+  background-image: url("back.gif");
+  margin: 0%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 30%;
+}
+    body {
+      background-image: url("back.gif");
+      background-repeat: no-repeat;
+      display: flex;
+      background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 30%;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Verdana, sans-serif;
+    }
+    
+
+    .envelope {
+      position: relative;
+      width: 500px;
+      height: 400px;
+      background: #f8c8dc;
+      border: 2px solid #d46a85;
+      cursor: pointer;
+      overflow: hidden;
+      border-radius: 8px;
+      transition: transform 0.5s ease;
+    }
+
+    .flap {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-left: 250px solid transparent;
+      border-right: 250px solid transparent;
+      border-bottom: 200px solid #d46a85;
+      transition: transform 0.6s ease;
+      transform-origin: top;
+    }
+.envelope.open .flap {
+      transform: rotateX(180deg);
+    }
+    .letter {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: white;
+      padding: 20px;
+      box-sizing: border-box;
+      text-align: center;
+      transition: top 0.6s ease;
+    }
+
+    .envelope.open .flap {
+      transform: rotateX(180deg);
+    }
+
+    .envelope.open .letter {
+      top: 0;
+    }
+
+    h2 {
+      margin: 0;
+      color: #d46a85;
+    }
+    p {
+      font-size: 16px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+<audio autoplay loop>
+<source src="Paramore The Only Exception OFFICIAL VIDEO.mp3" type="audio/mpeg">
+</audio>
+<div class="envelope" onclick="toggleEnvelope()">
+  <div class="flap"></div>
+  <div class="letter">
+
+      
+    <h2>💌 My Note</h2>
+    <p>Hi Baby Gusto ko lang sabihin na sobrang thankful ako na nandiyan ka sa buhay ko. 
+        Ikaw yung pahinga ko sa magulong mundo, yung ngiti ko sa simpleng araw, at yung 
+        dahilan kung bakit mas masarap magmahal. Kahit hindi tayo perfect,
+         basta magkasama tayo, alam  ko  may mga pagkakamali tayo nagagawa at pagkukulang
+         pero hindi  padin rason yon  para sumuko tayo okay poba?, malalagpasan natin lahat ng 
+         pagsubok sa rs nato hanggang pang habang buhay ❤️❤️ alam ko din na kaya natin lahat wag natin sukuan ang isa't isa
+         palagi lang natin piliin ang isa't isa kahit anong mangyari babyy ko. Mahal na mahal kita, palagi.”❤️</p>
+    <img id="babypic" src = "cat.gif" alt="babyheart"width="100px" height="100px">
+  </div>
+</div>
+</div>
+<script>
+  function toggleEnvelope() {
+    document.querySelector('.envelope').classList.toggle('open');
+  }
+</script>
+
+</body>
+</html>
